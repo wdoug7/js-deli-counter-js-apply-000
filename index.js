@@ -1,7 +1,18 @@
-function takeANumber(current_line,new_name) {
+/*function takeANumber(current_line,new_name) {
   current_line.push(new_name);
   return `Welcome, ${new_name}. You are number ${current_line.length} in line.`
+}*/
+var counter = 0
+
+function takeaNumber(current_line) {
+  counter += 1
+  current_line.push(counter)
+  return `You are number ${counter} in line`
 }
+
+
+
+
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
